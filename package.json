@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "mocha \"test/**/*.spec.js\" --reporter mochawesome --reporter-options reportDir=test/reports,reportFilename=path-coverage,quiet=true",
-    "test:path-coverage": "npm test"
+    "test:path-coverage": "npm test",
+    "test:load:login": "k6 run test/loadTesting/login.loadtest.js"
   },
   "repository": {
     "type": "git",
